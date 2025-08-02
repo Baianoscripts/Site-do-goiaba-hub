@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍈 Goiaba Hub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2e003e, #003366);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 30px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 10px 0;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        .container {
+            margin: 50px auto;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        button {
+            background: #00cc88;
+            border: none;
+            padding: 15px 25px;
+            color: white;
+            font-size: 1em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #00e699;
+        }
+        .features {
+            text-align: left;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+        .features li {
+            margin: 8px 0;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/yourlogo.png" alt="Goiaba Hub Logo" width="120">
+        <h1>🍈 Goiaba Hub</h1>
+        <p class="subtitle">O melhor hub para Roblox by Root666</p>
+    </header>
+    <div class="container">
+        <h2>Loadstring Oficial:</h2>
+        <p id="code">loadstring(game:HttpGet("https://raw.githubusercontent.com/Baianoscripts/Goiaba-hub-vers-o-beta/refs/heads/main/Main.lua"))()</p>
+        <button onclick="copiar()">📋 Copiar Loadstring</button>
+
+        <ul class="features">
+            <h3>✨ Recursos:</h3>
+            <li>RGB no nome e bio</li>
+            <li>Velocidade do carro</li>
+            <li>Visualizar players</li>
+            <li>Interface otimizada (Redz v5)</li>
+        </ul>
+    </div>
+
+    <footer>
+        🍈 Goiaba Hub - Feito por Root666 © 2025
+    </footer>
+
+    <script>
+        function copiar() {
+            const codigo = document.getElementById("code").innerText;
+            navigator.clipboard.writeText(codigo);
+            alert("✅ Loadstring copiado com sucesso!");
+        }
+    </script>
+</body>
+</html>
